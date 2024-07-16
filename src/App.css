@@ -1,38 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Libre Baskerville", serif;
+}
+
 .App {
+  width: 100%;
   text-align: center;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #e5e5e5;
+height: 4rem;
+padding-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.paint-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.paint-info-container h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paint-info-container h2 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
+
+.paint-info-container h3 {
+  font-size: 12.5rem;
+  line-height: 9.3rem;
+  color: #f3f3f3f3;
+  margin-top: 2rem;
+}
+
+.about-paint {
+  width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.75rem ;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+} 
+
+.btn {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  color: #7d7d7d;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a:hover, a:active {
+  color: #000000;
+}
+
+
